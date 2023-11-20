@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 const app = express();
 const port = 5000;
-require('dotenv').config();
+require('dotenv').config().parsed;
 
-const URI = "mongodb+srv://chiragrs153:A6jxeMaanBjtxZxf@cluster0.rtee5w9.mongodb.net/?retryWrites=true&w=majority"
+const URI = process.env.MONGO_URI;
 mongoose.connect(URI).then(() => {
     console.log("Connected Sucssefully")
 }).catch((err) => {
