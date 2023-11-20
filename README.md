@@ -23,23 +23,17 @@ Put your mongourl in .env file
 ## `Terminal 1`
 
 cd inotebook.\
-
 npm install.\
-
 npm start
 
 ## `Terminal 2`
 
 cd backend.\
-
 npm install.\
-
 nodemon start.
 
 ### `Features`
 
 [1] Creating the toDo list.\
-
 [2] Editing the Todo List.\
-
 [3] Deleting the Todo List.\
